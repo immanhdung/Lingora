@@ -24,7 +24,7 @@ builder.Host.UseSerilog();
 var connectionString = builder.Configuration.GetConnectionString("SupabasePostgres");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    if (!string.IsNullOrEmpty(connectionString) && !connectionString.Contains("your-project-ref"))
+    if (!string.IsNullOrEmpty(connectionString) && !connectionString.Contains("YOUR_SUPABASE_PASSWORD") && !connectionString.Contains("your-project-ref"))
     {
         options.UseNpgsql(connectionString, b => b.MigrationsAssembly("Lingora.Infrastructure"));
     }
