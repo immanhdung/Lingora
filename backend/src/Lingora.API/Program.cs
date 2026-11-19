@@ -135,7 +135,7 @@ using (var scope = app.Services.CreateScope())
     {
         if (db.Database.IsRelational())
         {
-            await db.Database.MigrateAsync();
+            await db.Database.EnsureCreatedAsync();
         }
         await DatabaseSeeder.SeedAsync(db);
         Log.Information("Lingora database seeded successfully.");
