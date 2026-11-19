@@ -97,7 +97,7 @@ export const StudentDashboard: React.FC = () => {
               </div>
             </div>
             <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-              Xin chào, {user?.fullName || 'Học viên'}! 👋
+              Xin chào, {user?.fullName || 'Học viên'}!
             </h1>
             <p className="mt-1 text-xs sm:text-sm text-indigo-100 max-w-xl">
               Hôm nay bạn đã học được <strong>20 / {user?.dailyGoalMinutes || 30} phút</strong>. Tiếp tục hoàn thành 10 phút để nhận 50 XP và giữ vững ngọn lửa học tập!
@@ -256,22 +256,22 @@ export const StudentDashboard: React.FC = () => {
           <Card className="border-purple-200/80 bg-gradient-to-b from-purple-50/40 to-white dark:border-purple-900/40 dark:from-purple-950/20 dark:to-slate-900">
             <CardHeader className="pb-2">
               <div className="flex items-center gap-2">
-                <div className="h-7 w-7 rounded-lg bg-primary-electric flex items-center justify-center text-white text-xs">
-                  🤖
+                <div className="h-7 w-7 rounded-lg bg-primary-600 flex items-center justify-center text-white">
+                  <Bot className="h-4 w-4" />
                 </div>
                 <div>
                   <CardTitle className="text-sm font-bold text-slate-900 dark:text-white">
-                    Gợi ý thông minh từ AI
+                    Gợi ý tối ưu từ Gia sư AI
                   </CardTitle>
                 </div>
               </div>
             </CardHeader>
             <CardContent className="space-y-3 text-xs leading-relaxed text-slate-600 dark:text-slate-300">
               <p>
-                📊 <strong>Điểm mạnh:</strong> Khả năng nhớ từ vựng (Vocab) và Ngữ pháp thời quá khứ của bạn đạt độ chính xác <strong>88%</strong>.
+                <strong>Điểm mạnh:</strong> Khả năng nhớ từ vựng (Vocab) và Ngữ pháp thời quá khứ của bạn đạt độ chính xác <strong>88%</strong>.
               </p>
               <p>
-                ⚠️ <strong>Cần chú ý:</strong> Ở phần Speaking, tốc độ phản xạ và nối âm (Connected Speech) còn ngập ngừng. Hãy thử luyện thêm <strong>1 bài Shadowing Studio</strong> hôm nay!
+                <strong>Cần chú ý:</strong> Ở phần Speaking, tốc độ phản xạ và nối âm (Connected Speech) còn ngập ngừng. Hãy thử luyện thêm <strong>1 bài Shadowing Studio</strong> hôm nay!
               </p>
               <Link to="/unique-features" className="inline-flex items-center font-bold text-primary-600 dark:text-primary-400 hover:underline pt-1">
                 Vào Shadowing Studio ngay <ArrowRight className="ml-1 h-3.5 w-3.5" />
